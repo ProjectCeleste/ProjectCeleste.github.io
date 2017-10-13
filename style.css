@@ -51,14 +51,8 @@ body {
 }
 
 .logo {
-    padding-left: 13px;
+    padding-left: 15px;
 }
-
-.navbar-header {
-    text-align: center;
-    width: 100%;
-}
-.navbar-brand {float:none;}
 
 .age-nav a {
     color: white;
