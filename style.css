@@ -1,0 +1,235 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+    width: 798px;
+    height: 40px;
+    background: url('images/nav-bar-bg.png') no-repeat;
+}
+
+.navbar-wrapper .navbar .container {
+    width: 798px;
+    background-size: cover;
+}
+
+.age-nav {
+    width: 805px;
+    height: 40px;
+
+    color: white;
+}
+
+.list-header {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.logo {
+    padding-left: 13px;
+}
+
+.navbar-header {
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {float:none;}
+
+.age-nav a {
+    color: white;
+}
+.dropdown-menu{
+    background-color: #0b4272;
+}
+
+.dropdown-menu>li>a {
+    color: white;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: unset;
+}
+
+.dropdown-menu>li>a:focus , .dropdown-menu>li>a:hover {
+    color: #ffde00;
+    background-color: unset;
+}
+
+.navbar-nav>li>a {
+    padding: 12px 14px 10px;
+    font-weight: 900;
+    font: 14px "LithosProBold",Arial,sans-serif;
+    cursor: hand;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: unset;
+    color: #ffde00;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 950px;
+    margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+    padding-top: 200px;
+    bottom: initial;
+    padding-bottom: 0;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 950px;
+    background-color: white;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    opacity: .7;
+    left: 0;
+    min-width: 100%;
+}
+
+.play-button {
+    background-image: url('images/play.png');
+    height: 69px;
+    width: 256px;
+}
+.play-button:hover {
+    background-image: url('images/play-hover.png');
+}
+
+.news-button {
+    background-image: url('images/newsbutton.png');
+    height: 69px;
+    width: 256px;
+}
+
+.news-button:hover {
+    background-image: url('images/newsbutton-hover.png');
+}
+
+.moreinfo-button {
+    background-image: url('images/moreinfobutton.png');
+    height: 69px;
+    width: 256px;
+}
+
+.moreinfo-button:hover {
+    background-image: url('images/moreinfobutton-hover.png');
+}
+
+.featurette-image {
+    width: 100%;
+    top: 100px;
+    margin-top: 120px;
+    max-width: initial;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+
+
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #navbar > ul {
+        min-width: 790px;
+    }
+
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
